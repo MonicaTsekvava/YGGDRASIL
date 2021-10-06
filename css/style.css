@@ -1,0 +1,406 @@
+/*lbet font*/
+@font-face {
+	font-family: "lbet-nus";
+	src: url("../fonts/LBetSTDNus-Medium.woff2") format("woff2"),
+	url("../fonts/LBetSTDNus-Medium.woff") format("woff");
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "lbet-nus";
+	src: url("../fonts/LBetSTDNus-Bold.woff2") format("woff2"),
+	url("../fonts/LBetSTDNus-Bold.woff") format("woff");
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "lbet-mt";
+	src: url("../fonts/LBetSTDMT-Regular.woff2") format("woff2"),
+	url("../fonts/LBetSTDMT-Regular.woff") format("woff");
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "lbet-mt";
+	src: url("../fonts/LBetSTDMT-Bold.woff2") format("woff2"),
+	url("../fonts/LBetSTDMT-Bold.woff") format("woff");
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'promo-mt';
+	src: url('../fonts/Gugeshashvili_8_Mthavruli-Bold.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/Gugeshashvili_8_Mthavruli-Bold.woff') format('woff'),
+	url('../fonts/Gugeshashvili_8_Mthavruli-Bold.ttf') format('truetype'),
+	url('../fonts/Gugeshashvili_8_Mthavruli-Bold.svg#Gugeshashvili_8_Mthavruli-Bold') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+/*end lbet font*/
+
+.background{
+    background: url(../img/background.jpg) no-repeat center;
+    background-size: 100% auto;
+    padding-top: 30vw;
+}
+
+.content{
+    margin: 0 auto;
+    max-width: 1250px;
+    width: 100%;
+    border-radius: 3px;
+    background-color:  #361e81;
+    
+}
+.header-bg{
+    background: url(../img/header-bg.jpg) no-repeat center;
+    background-size: 100% auto;
+    margin: -6rem auto 0;
+    z-index: 3;
+    width: 100%;
+    padding-bottom: 61%;
+}
+/* .first-section{
+    background-color:  #361e81;
+} */
+.cards{
+    position: relative;
+    perspective: 1000px;
+    /* transform-style: preserve-3d; */
+    padding-top: 2rem;
+    display: flex;
+    flex-direction:row;
+    justify-content: space-around;
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: #361e81;
+   z-index: 10;
+    
+}
+
+.cards>div{
+    margin: 1rem;
+    background: url(../img/card1.jpg) no-repeat center;
+    background-size: cover;
+    width: 23.3rem;
+    height: 27rem;
+    border-radius: 15px;
+    transition: all 0.5s linear;
+
+}
+
+.cards:hover>div{
+    transform: rotateX(45deg) translateZ(2px);
+}
+.second-section{
+        padding: 0.5rem 2rem 0.5rem 4rem;
+    background-color: #361e81;
+    margin: 0 auto;
+    max-width: 1250px;
+    width: 100%;
+}
+.text{
+    position: absolute;
+    font-family: "lbet-mt";
+        width: 100%;
+        height: 100%;
+        padding: 2rem;
+    
+}
+.card1 .title{
+    color: #00ff4e;
+}
+.title{
+    
+    font-size: 2.2rem;
+    text-align: center;
+    align-items: center;
+   padding-bottom: 2.5rem ;
+    font-family: lbet-mt, sans-serif;
+}
+.card1 .date{
+    background-color: #00ff4e;
+}
+.date{
+   
+    border-radius: 100px;
+    padding: .25rem .5rem;
+    font-size: 1rem;
+    text-align: center;
+    margin: 2rem auto;
+    display: table;
+}
+.card1 .prize{
+    color: white;
+}
+.prize{
+    
+    font-weight: bold;
+    text-align: center;
+    align-items: center;
+    font-family: "lbet-mt";
+    padding-bottom: 4rem;
+}
+.prize span:first-child{
+    font-size: 3.5rem;
+}
+.prize span:last-child{
+    font-size: 1.8rem;
+}
+.card1{
+    position: relative;
+    border-radius: 15px;
+}
+.card2{
+    position: relative;
+}
+.card-img{
+    border-radius: 15px;
+    /* margin: 1rem; */
+    /* max-width: 400px;
+    width: 100%; */
+}
+.card1 .more{
+    background-color: #f76721;;
+}
+.more{
+    color: #ffffff;
+    font-size: 1.3rem;
+    padding: .7rem 1.4rem;
+    border-radius:100px ;
+    font-family: lbet-mt, sans-serif;
+    display: table;
+    margin: 0 auto;
+}
+
+.card2 .title{
+    color: #ffbdd0;
+
+}
+.card2 .date{
+    background-color: #ffbdd0;
+    
+
+}
+.card2 .prize{
+    color: white;
+    
+}
+.card2 .more{
+    background-color: #8859ff;
+    
+}
+.card2 img{
+    filter: blur(5px);
+}
+
+.locked::after{
+    content: "";
+    border-radius:15px ;
+    background:rgba(126, 7, 69, 0.7) url(../img/locked.png) no-repeat center;
+    background-size: 35%;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    top: 0;
+    left: 0;
+}
+.text-bg{
+    margin: 0 auto;
+    position: relative;
+   color:  #d9e6d4;
+   line-height: 1.8rem;
+   max-width: 1000px;
+   width: 100%;
+   padding-top: 5rem;
+   padding-bottom: 5rem;
+   font-size: 1.3rem;
+   font-family: lbet-nus, sans-serif;
+}
+
+h2{
+    position: relative;
+    color: #d9e6d4;
+    font-size: 1.7rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    font-family: "lbet-mt";
+}
+h2::before{
+    content: "";
+    top: 50%;
+    left: -19px;
+    width: 0.3rem;
+    height: 1.2rem;
+    background-color: #ffe82a;
+    position: absolute;
+    border-radius: 3px;
+    transform: translateY(-50%);
+}
+
+
+.third-section{
+    margin: 0 auto;
+    background-color: #361e81;
+    max-width: 1250px;
+    width: 100%;
+}
+h4{
+    text-align: center;
+    padding: 3rem;
+    color: white;
+    font-size: 1.5rem;
+    font-family: "lbet-nus";
+}
+.slot{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    perspective: 1000px;
+    transform-style: preserve-3d;
+}
+
+.slot>img{
+    margin: 1rem;
+    display: block;
+    width: 20%;
+    max-width: 271px;
+    min-width: 100px;
+    transition: all 1s linear;
+    cursor: pointer;
+}
+
+.slot:hover>img{
+    transform: scale(1.1) rotateX(45deg);
+}
+
+.tables{
+    width: 95%;
+    max-width: 650px;
+    margin: 3rem auto 0.5rem;
+   
+}
+
+.table-top{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+    padding-bottom: 0.3rem;
+    /* padding: 0 1.2rem; */
+    color: white;
+    font-size: 1.4rem;
+    font-family: "lbet-mt";
+}
+
+.info-tables{
+    max-height: 34rem;
+    padding-right: 0.8rem;
+    padding-bottom: 2.3rem;
+}
+.info-table{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 1.38rem;
+    padding-left: 1.38rem;
+    margin-bottom: 0.8rem;
+    font-size: 1.4rem;
+    padding: .25rem .5rem;
+    border-radius: 34px;
+    color: #361e81;
+    background-color: #b8f4ff;
+}
+
+.number{
+    font-size: 1.4rem;
+    font-weight: bold;
+
+}
+.score{
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+
+.table-top p:first-child{
+    padding-left: 0.2rem;
+}
+.table-top p:last-child{
+    padding-right: 1rem;
+}
+
+.rules{
+    display: table;
+    font-weight: bold;
+    margin: 0 auto;
+    font-size: 1.2rem;
+    padding: 1.5rem 2.5rem;
+    border-radius: 100px;
+    color: rgba(255, 255, 255, 0.8);
+    font-family: "lbet-mt";
+    transform: translateY(46%);
+    background-image: linear-gradient(to right, #277d42, #2e9553);
+}
+
+.section-color{
+    max-width: 1250px;
+    width: 100%;
+    margin: 0 auto;
+    background-color: #e6ebf7;
+    padding-top: 5rem;
+    padding: 3.25rem 4rem;
+}
+
+.text-bottom{
+    margin: 3rem 0 3rem 2rem;
+    font-size: 1.1rem;
+    color: #252525;
+    font-family: lbet-nus, sans-serif;
+    line-height: 1.5rem;
+}
+
+
+html,body{
+    font-size: 16px;
+}
+
+@media (max-width:1250px) {
+    
+    html,body{
+        font-size: 14px;
+    }
+    .background{
+        display: none;
+
+    }
+    .header-bg{
+        margin: 0 auto;
+        padding-bottom:61%;
+    }
+}
+
+@media (max-width:1050px) {
+    
+    html,body{
+        font-size: 12px;
+    }
+}
+
+@media (max-width:600px) {
+    
+    html,body{
+        font-size: 10px;
+    }
+}
